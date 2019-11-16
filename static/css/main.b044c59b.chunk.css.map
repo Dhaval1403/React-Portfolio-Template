@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css","NavBar.css"],"names":[],"mappings":"AAAA,KACI,QACJ,CCFA,QACI,qBACJ","file":"main.b044c59b.chunk.css","sourcesContent":["body {\r\n    margin: 0px;\r\n}\r\n",".navbar {\r\n    background-color: aqua;\r\n}"]}
