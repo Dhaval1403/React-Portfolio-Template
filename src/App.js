@@ -6,8 +6,10 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <PersistentDrawerRight />
-      <ProjectCard />
+      <React.Fragment>
+        <PersistentDrawerRight />
+        <ProjectCard />
+      </React.Fragment>
     );
   }
 }
