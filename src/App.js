@@ -1,13 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
+import React , {Component} from 'react';
+import PersistentDrawerRight from "./Component/Navigation/Navigation"
+import ProjectCard from './components/ProjectCard/ProjectCard';
 import './App.css';
 
-import ProjectCard from './components/ProjectCard/ProjectCard';
-
-function App() {
-  return (
-    <ProjectCard />
-  );
+class App extends Component {
+  render() {
+    return (
+      <PersistentDrawerRight />
+      <ProjectCard />
+    );
+  }
 }
 
 export default App;
