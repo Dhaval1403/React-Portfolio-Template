@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/React-Portfolio-Template/static/css/main.ccbc4d8a.chunk.css",
-    "main.js": "/React-Portfolio-Template/static/js/main.6c5275fa.chunk.js",
-    "main.js.map": "/React-Portfolio-Template/static/js/main.6c5275fa.chunk.js.map",
+    "main.css": "/React-Portfolio-Template/static/css/main.f08ea7c6.chunk.css",
+    "main.js": "/React-Portfolio-Template/static/js/main.58e7065b.chunk.js",
+    "main.js.map": "/React-Portfolio-Template/static/js/main.58e7065b.chunk.js.map",
     "runtime-main.js": "/React-Portfolio-Template/static/js/runtime-main.0bb88bc1.js",
     "runtime-main.js.map": "/React-Portfolio-Template/static/js/runtime-main.0bb88bc1.js.map",
     "static/js/2.17b501bb.chunk.js": "/React-Portfolio-Template/static/js/2.17b501bb.chunk.js",
     "static/js/2.17b501bb.chunk.js.map": "/React-Portfolio-Template/static/js/2.17b501bb.chunk.js.map",
     "index.html": "/React-Portfolio-Template/index.html",
-    "precache-manifest.4438bf2ffb9f24f565d33ea8c6bb35cc.js": "/React-Portfolio-Template/precache-manifest.4438bf2ffb9f24f565d33ea8c6bb35cc.js",
+    "precache-manifest.ba22fc64e4d8bfbdac3427815d054e40.js": "/React-Portfolio-Template/precache-manifest.ba22fc64e4d8bfbdac3427815d054e40.js",
     "service-worker.js": "/React-Portfolio-Template/service-worker.js",
-    "static/css/main.ccbc4d8a.chunk.css.map": "/React-Portfolio-Template/static/css/main.ccbc4d8a.chunk.css.map",
+    "static/css/main.f08ea7c6.chunk.css.map": "/React-Portfolio-Template/static/css/main.f08ea7c6.chunk.css.map",
     "static/media/project.png": "/React-Portfolio-Template/static/media/project.0ad23366.png"
   },
   "entrypoints": [
     "static/js/runtime-main.0bb88bc1.js",
     "static/js/2.17b501bb.chunk.js",
-    "static/css/main.ccbc4d8a.chunk.css",
-    "static/js/main.6c5275fa.chunk.js"
+    "static/css/main.f08ea7c6.chunk.css",
+    "static/js/main.58e7065b.chunk.js"
   ]
 }
