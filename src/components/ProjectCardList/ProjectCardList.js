@@ -16,7 +16,7 @@ export default function ProjectCardList() {
 
   return (
     <Paper style={{backgroundColor: "#f3f3f3"}}>
-      <Typography variant="h5" display="block" style={{ paddingLeft: "1rem 2rem", fontSize: "1.5rem"}}>
+      <Typography variant="h5" display="block" style={{ padding: "1rem 2rem", fontSize: "1.5rem"}}>
         Projects
       </Typography>
       <Grid
