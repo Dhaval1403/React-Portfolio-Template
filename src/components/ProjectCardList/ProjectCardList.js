@@ -3,6 +3,8 @@ import { Grid, Typography, Paper } from '@material-ui/core';
 import project_list from '../../project-list';
 import ProjectCard from '../ProjectCard/ProjectCard';
 
+import './ProjectCardList.css';
+
 export default function ProjectCardList() {
 
   return (
@@ -13,7 +15,7 @@ export default function ProjectCardList() {
       <Grid
         container
         spacing={4}
-        style={{ padding: "1rem 2rem", flexGrow: 1 }}
+        className="grid-container"
       >
         {
           project_list.map((project, i) => <ProjectCard project={project} key={i} />)
