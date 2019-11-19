@@ -54,7 +54,7 @@ export default function ProjectCard({ project }) {
                 className="chip"
                 size="small"
                 label={label}
-                color="secondary"
+                color="#3f51b5"
                 key={i}
               />
             )

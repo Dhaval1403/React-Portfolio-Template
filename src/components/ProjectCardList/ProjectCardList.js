@@ -16,13 +16,13 @@ export default function ProjectCardList() {
 
   return (
     <Paper style={{backgroundColor: "#f3f3f3"}}>
-      <Typography variant="h5" display="block" style={{ paddingLeft: 32, fontSize: 1.5rem }}>
-        My Work
+      <Typography variant="h5" display="block" style={{ paddingLeft: "2rem", fontSize: "2rem", margin: "1rem 0" }}>
+        Projects
       </Typography>
       <Grid
         container
         spacing={4}
-        style={{ padding: "0 32px 0 32px", flexGrow: 1 }}
+        style={{ padding: "2rem", flexGrow: 1 }}
       >
         {
           projectList.map((project, i) => <ProjectCard project={project} key={i} />)
