@@ -20,9 +20,9 @@ export default function ProjectCard({ project }) {
     * desRef.current.offsetWidth is the width of the description element. Used 13 instead of 1.3,
     * by multipling both sides by 10. Also using 14.5 instead of 13 in division when calculating the 
     * length of the substring because 13 is not exact and sometimes the substring was still bigger.
-    * Hence, made it a little smaller by dividing by a 14.5 instead of 13.
+    * Hence, made it a little smaller by dividing by a 15 instead of 13.
     */
-    setDes((project.des.length * 13) <= desRef.current.offsetWidth * 10 ? project.des : project.des.slice(0, (desRef.current.offsetWidth * 10) / 14.5) + "...");
+    setDes((project.des.length * 13) <= desRef.current.offsetWidth * 10 ? project.des : project.des.slice(0, (desRef.current.offsetWidth * 10) / 15) + "...");
   }
 
   // This runs after render
