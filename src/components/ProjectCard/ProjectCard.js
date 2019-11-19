@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Grid, Chip } from '@material-ui/core';
 import { Card, CardActions, CardContent, CardMedia, Typography, IconButton } from '@material-ui/core';
 import { Info, Launch, GitHub } from '@material-ui/icons';
-import ProjectImage from './project.png';
 
 import './ProjectCard.css';
 
@@ -38,7 +37,7 @@ export default function ProjectCard({ project }) {
         <CardMedia
           component="img"
           alt={project.title}
-          image={ProjectImage}
+          image={project.image}
           title={project.title}
         />
         <CardContent>
