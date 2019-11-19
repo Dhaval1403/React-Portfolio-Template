@@ -36,6 +36,7 @@ export default function ProjectCard({ project }) {
       <Card>
         <CardMedia
           component="img"
+          className="project-image"
           alt={project.title}
           image={project.image}
           title={project.title}

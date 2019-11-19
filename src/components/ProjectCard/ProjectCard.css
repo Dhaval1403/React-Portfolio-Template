@@ -13,3 +13,8 @@
   height: 100px;
   overflow: hidden;
 }
+
+.project-image {
+  height: 125px;
+  width: 125px;
+}
