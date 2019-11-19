@@ -61,13 +61,13 @@ export default function ProjectCard({ project }) {
           }
         </CardContent>
         <CardActions disableSpacing className="card-actions">
-          <IconButton title="More Info" aria-label="more info">
+          <IconButton title="More Info" aria-label="More Info">
             <Info />
           </IconButton>
-          <IconButton title="Launch App" aria-label="launch application" href={project.links.launch}>
+          <IconButton title="Launch App" aria-label="Launch Application" href={project.links.launch}>
             <Launch />
           </IconButton>
-          <IconButton title="See Code" aria-label="see code on github" href={project.links.github}>
+          <IconButton title="See Code" aria-label="Source Code On Github" href={project.links.github}>
             <GitHub />
           </IconButton>
         </CardActions>
