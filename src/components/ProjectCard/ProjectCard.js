@@ -1,33 +1,77 @@
-import React, { Component } from 'react';
-import { Typography, Grid, Card, CardActions, CardContent, CardMedia, Button } from '@material-ui/core';
+import React, { useEffect, useState } from 'react';
+import { Grid, Chip } from '@material-ui/core';
+import { Card, CardActions, CardContent, CardMedia, Typography, IconButton } from '@material-ui/core';
+import { Info, Launch, GitHub } from '@material-ui/icons';
 import ProjectImage from './project.png';
 
-function ProjectCard(props) {
-    return (
-        <Grid container spacing={24} style={{padding: 24}}>
-            <Grid item xs={12} sm={6} lg={4} xl={3}>
-                <Card>
-                    <CardMedia style={{height: 0, paddingTop: '56.25%'}}
-                        image={ProjectImage}
-                        title={"Project Title"}
+import './ProjectCard.css';
 
-                    />
-                    <CardContent>
-                        <Typography gutterBottom variant="headline" component="h2">
-                            Project Title
-                            </Typography>
-                           <Typography component="p">
-                           Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.                  </Typography>
-                    </CardContent>
-                    <CardActions>
-                        <Button size="small" color="primary" href="https://www.google.com" target="_blank">
-                            Go to course
-                        </Button>
-                    </CardActions>
-                </Card>
-            </Grid>
-        </Grid>
-    );
+export default function ProjectCard({ project }) {
+  // ref for the description node
+  const desRef = React.createRef();
+
+  const [des, setDes] = useState(project.des);
+
+  const updateDes = () => {
+    /* project.des.length is the no. of characters in the original description
+    * but due to card height being fixed, if the description is too long, it must
+    * be trimed. By measuring no. of characters and width of the description at several widths, I found 
+    * description width = 1.3 * no. of characters (approx). The following math is a result of this.
+    * desRef.current.offsetWidth is the width of the description element. Used 13 instead of 1.3,
+    * by multipling both sides by 10. Also using 14.5 instead of 13 in division when calculating the 
+    * length of the substring because 13 is not exact and sometimes the substring was still bigger.
+    * Hence, made it a little smaller by dividing by a 14.5 instead of 13.
+    */
+    setDes((project.des.length * 13) <= desRef.current.offsetWidth * 10 ? project.des : project.des.slice(0, (desRef.current.offsetWidth * 10) / 14.5) + "...");
+  }
+
+  // This runs after render
+  useEffect(() => {
+    updateDes(); // Update (trim) the description
+    window.addEventListener("resize", updateDes); // Update the des on resizing
+    return () => window.removeEventListener("resize", updateDes); // Unsubscribe
+  });
+
+  return (
+    <Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
+      <Card>
+        <CardMedia
+          component="img"
+          alt={project.title}
+          image={ProjectImage}
+          title={project.title}
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            {project.title}
+          </Typography>
+          <Typography variant="body2" component="p" className="description" ref={desRef}>
+            {des}
+          </Typography>
+          {
+            project.tags.map((label, i) =>
+              <Chip
+                className="chip"
+                size="small"
+                label={label}
+                color="secondary"
+                key={i}
+              />
+            )
+          }
+        </CardContent>
+        <CardActions disableSpacing className="card-actions">
+          <IconButton title="More Info" aria-label="more info">
+            <Info />
+          </IconButton>
+          <IconButton title="Launch App" aria-label="launch application" href={project.links.launch}>
+            <Launch />
+          </IconButton>
+          <IconButton title="See Code" aria-label="see code on github" href={project.links.github}>
+            <GitHub />
+          </IconButton>
+        </CardActions>
+      </Card>
+    </Grid>
+  );
 }
-
-export default ProjectCard;
