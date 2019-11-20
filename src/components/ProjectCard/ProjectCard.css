@@ -4,9 +4,15 @@
   margin-top: -20px;
 }
 
+.chip-container {
+  display: flex;
+  flex-flow: row wrap;
+  height: 26px; /* pre-calculated */
+  overflow: hidden;
+}
+
 .chip {
-  margin: 10px 5px 10px 0;
-  padding: 10px !important;
+  margin: 2px 3px 0 1px; /* if top/bottom margins are changed, must calculate the chip-container's height again */
 }
 
 .description {

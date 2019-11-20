@@ -21,7 +21,7 @@ export default function ProjectCard({ project }) {
     * length of the substring because 13 is not exact and sometimes the substring was still bigger.
     * Hence, made it a little smaller by dividing by a 15 instead of 13.
     */
-    setDes((project.des.length * 13) <= desRef.current.offsetWidth * 10 ? project.des : project.des.slice(0, (desRef.current.offsetWidth * 10) / 15) + "...");
+    setDes((project.des.length * 13) <= desRef.current.offsetWidth * 10 ? project.des : project.des.slice(0, (desRef.current.offsetWidth * 10) / 15).trim() + "...");
   }
 
   // This runs after render
@@ -45,9 +45,10 @@ export default function ProjectCard({ project }) {
           <Typography gutterBottom variant="h6" component="h2">
             {project.title}
           </Typography>
-          <Typography variant="body2" component="p" className="description" ref={desRef}>
+          <Typography variant="body2" component="p" className="description" ref={desRef} gutterBottom>
             {des}
           </Typography>
+          <div className="chip-container">
           {
             project.tags.map((label, i) =>
               <Chip
@@ -59,6 +60,7 @@ export default function ProjectCard({ project }) {
               />
             )
           }
+          </div>
         </CardContent>
         <CardActions disableSpacing className="card-actions">
           <IconButton title="More Info" aria-label="More Info">
