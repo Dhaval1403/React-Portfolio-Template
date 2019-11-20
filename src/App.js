@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import PersistentDrawerRight from "./components/Navigation/Navigation";
 import ProjectCard from "./components/ProjectCard/ProjectCard";
+import Experience from "./components/Experience/Experience";
 import "./App.css";
-import Experience from "./components/Experience/experience.component";
 
 class App extends Component {
   render() {
