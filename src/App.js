@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
-import PersistentDrawerRight from "./components/Navigation/Navigation"
+import React, { Component } from "react";
+import PersistentDrawerRight from "./components/Navigation/Navigation";
 import ProjectCardList from './components/ProjectCardList/ProjectCardList';
-import './App.css';
+import Experience from "./components/Experience/Experience";
+import "./App.css";
 
 class App extends Component {
   render() {
@@ -9,6 +10,7 @@ class App extends Component {
       <React.Fragment>
         <PersistentDrawerRight />
         <ProjectCardList />
+        <Experience />
       </React.Fragment>
     );
   }
