@@ -16,21 +16,23 @@ export default function IconTabs() {
 	};
 
 	return (
-		<Paper square className='tabs'>
-			<Tabs
-				value={value}
-				onChange={handleChange}
-				indicatorColor='primary'
-				textColor='primary'
-				aria-label='icon label tabs example'
-				centered
-			>
-				<Tab icon={<PersonRoundedIcon />} aria-label='phone' label='About Me' />
-				<Tab icon={<FavoriteIcon />} aria-label='favorite' label='Projects' />
-				<Tab icon={<WorkRoundedIcon />} aria-label='person' label='Experience' />
-				<Tab icon={<FavoriteIcon />} aria-label='person' label='Skills' />
-				<Tab icon={<QuestionAnswerRoundedIcon />} aria-label='person' label='Contact Me' />
-			</Tabs>
-		</Paper>
+		<React.Fragment>
+			<Paper square className='tabs'>
+				<Tabs
+					value={value}
+					onChange={handleChange}
+					indicatorColor='primary'
+					textColor='primary'
+					aria-label='icon label tabs example'
+					centered
+				>
+					<Tab icon={<PersonRoundedIcon />} aria-label='phone' label='About Me' />
+					<Tab icon={<FavoriteIcon />} aria-label='favorite' label='Projects' />
+					<Tab icon={<WorkRoundedIcon />} aria-label='person' label='Experience' />
+					<Tab icon={<FavoriteIcon />} aria-label='person' label='Skills' />
+					<Tab icon={<QuestionAnswerRoundedIcon />} aria-label='person' label='Contact Me' />
+				</Tabs>
+			</Paper>
+		</React.Fragment>
 	);
 }
