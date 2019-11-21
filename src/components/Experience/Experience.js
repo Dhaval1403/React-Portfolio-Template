@@ -3,11 +3,11 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles({
   overlayContent: {
-    background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
+    background: "#3f51b5",
     border: 0,
     width: "300px",
     borderRadius: 3,
-    boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)",
+    boxShadow: "0 3px 5px 2px #f5f5f5",
     color: "white",
     height: "300px",
     padding: "10px 30px"
