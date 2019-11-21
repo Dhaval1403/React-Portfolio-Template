@@ -9,28 +9,28 @@ import FavoriteIcon from '@material-ui/icons/Favorite';
 import './Navigation.css';
 
 export default function IconTabs() {
-  const [value, setValue] = React.useState(0);
+	const [ value, setValue ] = React.useState(0);
 
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
+	const handleChange = (event, newValue) => {
+		setValue(newValue);
+	};
 
-  return (
-    <Paper square className="tabs">
-      <Tabs
-        value={value}
-        onChange={handleChange}
-        indicatorColor="primary"
-        textColor="primary"
-        aria-label="icon label tabs example"
-        centered
-      >
-        <Tab icon={<PersonRoundedIcon />} aria-label="phone" label="About Me" />
-        <Tab icon={<FavoriteIcon />} aria-label="favorite" label="Projects" />
-        <Tab icon={<WorkRoundedIcon />} aria-label="person" label="Experience" />
-        <Tab icon={<FavoriteIcon />} aria-label="person" label="Skills" />
-        <Tab icon={<QuestionAnswerRoundedIcon />} aria-label="person" label="Contact Me" />
-      </Tabs>
-    </Paper>
-  );
+	return (
+		<Paper square className='tabs'>
+			<Tabs
+				value={value}
+				onChange={handleChange}
+				indicatorColor='primary'
+				textColor='primary'
+				aria-label='icon label tabs example'
+				centered
+			>
+				<Tab icon={<PersonRoundedIcon />} aria-label='phone' label='About Me' />
+				<Tab icon={<FavoriteIcon />} aria-label='favorite' label='Projects' />
+				<Tab icon={<WorkRoundedIcon />} aria-label='person' label='Experience' />
+				<Tab icon={<FavoriteIcon />} aria-label='person' label='Skills' />
+				<Tab icon={<QuestionAnswerRoundedIcon />} aria-label='person' label='Contact Me' />
+			</Tabs>
+		</Paper>
+	);
 }
