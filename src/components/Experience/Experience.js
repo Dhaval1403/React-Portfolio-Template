@@ -33,9 +33,9 @@ function Experience() {
   return (
     <>
       <CssBaseline />
-      <h2 style={{ margin: "20px 20px" }}>Work Experience</h2>
+      <h2 style={{ margin: "20px" }}>Work Experience</h2>
       <div className={expContainer}>
-        <div style={{ margin: "0 20px" }}>
+        <div style={{ margin: "0 10px" }}>
           <div className={overlayContent}>
             <h4 style={{ marginBlockEnd: 0 }}>GALPÃO GARAGEM</h4>
             <p style={{ marginBlockStart: 0 }}>
@@ -59,7 +59,7 @@ function Experience() {
             />
           </div>
         </div>
-        <div style={{ margin: "0 20px" }}>
+        <div style={{ margin: "0 10px" }}>
           <div className={overlayContent}>
             <h4 style={{ marginBlockEnd: 0 }}>APARTAMENTO OSCAR PORTO</h4>
             <p style={{ marginBlockStart: 0 }}>
@@ -82,7 +82,7 @@ function Experience() {
             />
           </div>
         </div>
-        <div style={{ margin: "0 20px" }}>
+        <div style={{ margin: "0 10px" }}>
           <div className={overlayContent}>
             <h4 style={{ marginBlockEnd: 0 }}>LOREM HOWLIN</h4>
             <p style={{ marginBlockStart: 0 }}>
@@ -105,7 +105,7 @@ function Experience() {
             />
           </div>
         </div>
-        <div style={{ margin: "0 20px" }}>
+        <div style={{ margin: "0 10px" }}>
           <div className={overlayContent}>
             <h4 style={{ marginBlockEnd: 0 }}>CARTEN GOSLEN</h4>
             <p style={{ marginBlockStart: 0 }}>
