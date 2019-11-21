@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Grid, Chip } from '@material-ui/core';
+import { Grid, Chip, CssBaseline } from '@material-ui/core';
 import { Card, CardActions, CardContent, CardMedia, Typography, IconButton } from '@material-ui/core';
 import { Info, Launch, GitHub } from '@material-ui/icons';
 
@@ -37,6 +37,7 @@ export default function ProjectCard({ project }) {
 
 	return (
 		<React.Fragment>
+			<CssBaseline />
 			<Grid item xs={12} sm={6} md={4} lg={3} xl={2}>
 				<Card>
 					<CardMedia
@@ -50,7 +51,7 @@ export default function ProjectCard({ project }) {
 						<Typography gutterBottom variant='h6' component='h2'>
 							{project.title}
 						</Typography>
-						<Typography variant='body2' component='p' className='description' ref={desRef} gutterBottom>
+						<Typography gutterBottom variant='body2' component='p' className='description' ref={desRef}>
 							{des}
 						</Typography>
 						<div className='chip-container'>

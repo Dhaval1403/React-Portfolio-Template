@@ -1,4 +1,5 @@
 import React from 'react';
+import { Typography } from '@material-ui/core';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles({
@@ -33,7 +34,9 @@ function Experience() {
 	return (
 		<React.Fragment>
 			<CssBaseline />
-			<h2 style={{ margin: '20px' }}>Work Experience</h2>
+			<Typography variant='h5' display='block' style={{ margin: '1rem 2rem', fontSize: '1.6rem' }}>
+				Work Experience
+			</Typography>
 			<div className={expContainer}>
 				<div style={{ margin: '0 10px' }}>
 					<div className={overlayContent}>
