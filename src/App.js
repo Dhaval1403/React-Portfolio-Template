@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Container from '@material-ui/core/Container';
 import PersistentDrawerRight from './components/Navigation/Navigation';
 import ProjectCardList from './components/ProjectCardList/ProjectCardList';
 import Experience from './components/Experience/Experience';
@@ -9,8 +10,10 @@ class App extends Component {
 		return (
 			<React.Fragment>
 				<PersistentDrawerRight />
-				<ProjectCardList />
-				<Experience />
+				<Container maxWidth='lg'>
+					<ProjectCardList />
+					<Experience />
+				</Container>
 			</React.Fragment>
 		);
 	}
