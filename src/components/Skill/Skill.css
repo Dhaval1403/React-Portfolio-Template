@@ -1,6 +1,7 @@
 .skill {
   padding: 0 16px 0 16px;
-  max-block-size: 180px;
+  max-block-size: 220px;
+  overflow: hidden;
 }
 
 .umbrellaText {
