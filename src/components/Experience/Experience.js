@@ -4,7 +4,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles({
 	overlayContent: {
-		background: '#3f51b5',
+		backgroundImage: 'linear-gradient(to right, rgb(85, 85, 255), rgb(255, 91, 91));',
 		border: 0,
 		width: '300px',
 		borderRadius: 3,

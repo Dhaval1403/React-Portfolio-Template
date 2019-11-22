@@ -2,4 +2,6 @@
 	position: sticky;
 	top: 0;
 	z-index: 999;
+	background-image: linear-gradient(to right, rgb(85, 85, 255), rgb(255, 91, 91));
+	color: #fff !important;
 }

@@ -21,8 +21,6 @@ export default function IconTabs() {
 				<Tabs
 					value={value}
 					onChange={handleChange}
-					indicatorColor='primary'
-					textColor='primary'
 					aria-label='icon label tabs example'
 					centered
 				>
