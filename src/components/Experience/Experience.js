@@ -22,6 +22,8 @@ const useStyles = makeStyles({
 	expImg: {
 		position: 'relative',
 		bottom: '300px',
+		width: '300px',
+		height: '300px',
 		transition: '.5s',
 		'&:hover': {
 			opacity: 0
