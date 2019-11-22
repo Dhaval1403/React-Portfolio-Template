@@ -1,0 +1,19 @@
+.skill {
+  padding: 0 16px 0 16px;
+  max-block-size: 180px;
+}
+
+.umbrellaText {
+  padding-bottom: 0;
+  line-height: 1;
+}
+
+.content {
+  padding-bottom: 16px;
+}
+
+.one-line {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

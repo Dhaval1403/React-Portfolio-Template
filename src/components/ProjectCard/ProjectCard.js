@@ -42,7 +42,7 @@ export default function ProjectCard({ project }) {
           title={project.title}
         />
         <CardContent>
-          <Typography gutterBottom variant="h6" component="h2">
+          <Typography gutterBottom variant="h6" component="h2" className="one-line">
             {project.title}
           </Typography>
           <Typography variant="body2" component="p" className="description" ref={desRef} gutterBottom>
