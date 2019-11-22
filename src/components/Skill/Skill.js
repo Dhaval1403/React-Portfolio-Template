@@ -16,8 +16,8 @@ const useStyles = makeStyles({
 });
 
 function SkillContents({ skill }) {
-  const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.down("xs"));
+  const theme = useTheme(); // taking theme from parent <ThemeProvider>
+  const matches = useMediaQuery(theme.breakpoints.down("xs")); // breakpoint
   const classes = useStyles();
 
   return (
@@ -58,20 +58,13 @@ function SkillContents({ skill }) {
   );
 }
 
-const theme = createMuiTheme();
-
-function SkillContentsWrapper({ skill }) {
-  return (
-    <ThemeProvider theme={theme}>
-      <SkillContents skill={skill} />
-    </ThemeProvider>
-  );
-}
-
+const theme = createMuiTheme(); // creates the theme that is provided to <ThemeProvider>
 export default function Skill({ skill }) {
   return (
     <Grid item xs={12} sm={6} md={3} className="skill">
-      <SkillContentsWrapper skill={skill} />
+      <ThemeProvider theme={theme}>
+        <SkillContents skill={skill} />
+      </ThemeProvider>
     </Grid>
   );
 }
