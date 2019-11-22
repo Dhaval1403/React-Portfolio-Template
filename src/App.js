@@ -1,12 +1,18 @@
-import React , {Component} from 'react';
-import NavBar from "./Component/NavBar"
-import './App.css';
+import React, { Component } from "react";
+import PersistentDrawerRight from "./components/Navigation/Navigation";
+import ProjectCardList from './components/ProjectCardList/ProjectCardList';
+import Experience from "./components/Experience/Experience";
+import "./App.css";
 
 class App extends Component {
   render() {
     return (
-      <NavBar />
-    )
+      <React.Fragment>
+        <PersistentDrawerRight />
+        <ProjectCardList />
+        <Experience />
+      </React.Fragment>
+    );
   }
 }
 
