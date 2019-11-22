@@ -49,10 +49,10 @@ function SkillContents({ skill }) {
       <Typography
         variant="body2"
         component="h4"
-        className="content"
+        className="des"
         style={{ textAlign: `${matches ? "center" : "left"}` }}
       >
-        {skill.content}
+        {skill.des}
       </Typography>
     </React.Fragment>
   );
