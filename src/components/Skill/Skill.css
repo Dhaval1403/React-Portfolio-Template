@@ -1,19 +1,16 @@
-.skill {
-  padding: 0 16px 0 16px;
-  max-block-size: 220px;
-  overflow: hidden;
+.skill-container {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 1200px;
+  margin: 16px;
 }
 
-.umbrellaText {
-  padding-bottom: 12px;
+.svg-icon {
+  padding: 0;
+  margin: 0;
 }
 
-.des {
-  padding-bottom: 16px;
-}
-
-.one-line {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.skill-img {
+  height: 64px;
+  width: 64px;
 }
