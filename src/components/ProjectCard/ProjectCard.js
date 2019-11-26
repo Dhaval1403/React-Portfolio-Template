@@ -1,16 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { Grid, Chip } from "@material-ui/core";
-import {
-  Card,
-  CardActions,
-  CardContent,
-  CardMedia,
-  Typography,
-  IconButton
-} from "@material-ui/core";
-import { Launch, GitHub, Info } from "@material-ui/icons";
-import InfoModal from "../InfoModal/InfoModal";
-
+import React, { useEffect, useState } from 'react';
+import { Grid, Chip } from '@material-ui/core';
+import { Card, CardActions, CardContent, CardMedia, Typography, IconButton } from '@material-ui/core';
+import { Info, Launch, GitHub } from '@material-ui/icons';
+import InfoModal from '../InfoModal/InfoModal';
 import "./ProjectCard.css";
 
 export default function ProjectCard({ project }) {
@@ -37,12 +29,12 @@ export default function ProjectCard({ project }) {
     );
   };
 
-  // This runs after render
-  useEffect(() => {
-    updateDes(); // Update (trim) the description
-    window.addEventListener("resize", updateDes); // Update the des on resizing
-    return () => window.removeEventListener("resize", updateDes); // Unsubscribe
-  });
+	// This runs after render
+	useEffect(() => {
+		updateDes(); // Update (trim) the description
+		window.addEventListener('resize', updateDes); // Update the des on resizing
+		return () => window.removeEventListener('resize', updateDes); // Unsubscribe
+	});
 
   const handleClose = () => {
     setModalOpen(false);
