@@ -7,7 +7,7 @@ import skillList from '../../utils/skill-list';
 export default function Skill({ skill }) {
 	return (
 		<React.Fragment>
-			<Typography variant='h5' display='block' style={{ margin: '1rem', fontSize: '1.6rem', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+			<Typography variant='h5' display='block' style={{ margin: '2rem', fontSize: '1.6rem', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
 				Skills
 			</Typography>
 			<div className='skill-container'>
