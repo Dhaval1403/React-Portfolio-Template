@@ -1,5 +1,6 @@
 .skill-container {
 	display: flex;
+	justify-content: center;
 	flex-flow: row wrap;
 	margin-bottom: 20px;
 }
