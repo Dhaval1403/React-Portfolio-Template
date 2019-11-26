@@ -2,7 +2,7 @@ import React from 'react';
 import { SvgIcon, Typography } from '@material-ui/core';
 import './Skill.css';
 
-import skillList from '../../skill-list';
+import skillList from '../../utils/skill-list';
 
 export default function Skill({ skill }) {
 	return (

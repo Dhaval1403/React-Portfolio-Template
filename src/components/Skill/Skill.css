@@ -1,7 +1,6 @@
 .skill-container {
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-evenly;
 	margin-bottom: 20px;
 }
 
@@ -11,6 +10,7 @@
 }
 
 .skill-img {
-	height: 80px;
-	width: 80px;
+	height: 75px;
+	width: 75px;
+	margin: 10px;
 }

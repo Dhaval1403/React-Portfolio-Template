@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import project_list from '../../project-list';
+import project_list from '../../utils/project-list';
 import ProjectCard from '../ProjectCard/ProjectCard';
 
 const useStyles = makeStyles({
