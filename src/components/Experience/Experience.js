@@ -14,8 +14,8 @@ const useStyles = makeStyles({
 		padding: '10px 30px'
 	},
 	expContainer: {
-		display: 'flex' /* 
-    justifyContent: "space-between", */,
+		display: 'flex',
+		justifyContent: 'center',
 		width: '100%',
 		flexWrap: 'wrap'
 	},

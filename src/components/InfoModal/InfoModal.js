@@ -16,12 +16,6 @@ export default function({ project, handleClose }) {
 		backgroundColor: 'rgba(100, 100, 100, 0.4)'
 	};
 
-	const handleClickOnModal = (event) => {
-		if (event.target.id === 'modal-container-id') {
-			handleClose();
-		}
-	};
-
 	const handleKeyPress = (event) => {
 		if (event.key === 'Escape') {
 			handleClose();
@@ -35,23 +29,20 @@ export default function({ project, handleClose }) {
 	});
 
 	return (
-		<div id='modal-container-id' style={modalContainerStyle} onClick={handleClickOnModal}>
-			<div id='modal-id' className='modal'>
-				<Typography gutterBottom variant='h6' component='h2' style={{ textAlign: 'center', padding: '0 8px' }}>
+		<div style={modalContainerStyle}>
+			<div className='modal'>
+				<Typography gutterBottom variant='h6' component='h2' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
 					{project.title}
 				</Typography>
-				<Typography variant='body2' component='p' gutterBottom>
+				<Typography gutterBottom variant='body2' component='p' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
 					{project.des}
-					{console.log(project.des)}
 				</Typography>
 				<Button
 					variant='outlined'
-					id='close-button'
 					color='primary'
-					style={{ margin: 'auto' }}
 					onClick={handleClose}
 				>
-					close
+					Close
 				</Button>
 			</div>
 		</div>
