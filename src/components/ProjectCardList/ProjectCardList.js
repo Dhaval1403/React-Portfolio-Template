@@ -16,7 +16,7 @@ export default function ProjectCardList() {
 
 	return (
 		<React.Fragment>
-			<Typography variant='h5' display='block' style={{ margin: '1rem 2rem', fontSize: '1.6rem' }}>
+			<Typography variant='h5' display='block' style={{ margin: '1rem', fontSize: '1.6rem', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
 				Projects
 			</Typography>
 			<Grid
