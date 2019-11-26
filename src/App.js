@@ -12,7 +12,7 @@ class App extends Component {
 				<PersistentDrawerRight />
 				<ProjectCardList />
 				<Experience />
-        <Skill />
+				<Skill />
 			</React.Fragment>
 		);
 	}

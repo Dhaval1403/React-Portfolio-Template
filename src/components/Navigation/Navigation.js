@@ -18,12 +18,7 @@ export default function IconTabs() {
 	return (
 		<React.Fragment>
 			<Paper square className='tabs'>
-				<Tabs
-					value={value}
-					onChange={handleChange}
-					aria-label='icon label tabs example'
-					centered
-				>
+				<Tabs value={value} onChange={handleChange} aria-label='icon label tabs example' centered>
 					<Tab icon={<PersonRoundedIcon />} aria-label='phone' label='About Me' />
 					<Tab icon={<FavoriteIcon />} aria-label='favorite' label='Projects' />
 					<Tab icon={<WorkRoundedIcon />} aria-label='person' label='Experience' />
