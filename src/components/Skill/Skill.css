@@ -1,0 +1,16 @@
+.skill-container {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 1200px;
+  margin: 16px;
+}
+
+.svg-icon {
+  padding: 0;
+  margin: 0;
+}
+
+.skill-img {
+  height: 64px;
+  width: 64px;
+}

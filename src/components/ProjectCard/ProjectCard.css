@@ -24,3 +24,9 @@
 	height: 200px;
 	width: 130px;
 }
+
+.one-line {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
