@@ -1,0 +1,9 @@
+.modal {
+	position: relative;
+	background-color: white;
+	overflow-y: auto;
+	max-width: 600px;
+	height: fit-content;
+	padding: 16px 32px;
+	margin: 20vh auto;
+}

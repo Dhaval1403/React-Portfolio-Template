@@ -1,0 +1,17 @@
+.skill-container {
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	margin-bottom: 20px;
+}
+
+.svg-icon {
+	padding: 0;
+	margin: 0;
+}
+
+.skill-img {
+	height: 90px;
+	width: 90px;
+	margin: 15px 25px;
+}
