@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PersistentDrawerRight from './components/Navigation/Navigation';
+import ScrollableTabsButtonForce from './components/Navigation/Navigation';
 import ProjectCardList from './components/ProjectCardList/ProjectCardList';
 import Experience from './components/Experience/Experience';
 import Skill from './components/Skill/Skill';
@@ -9,7 +9,7 @@ class App extends Component {
 	render() {
 		return (
 			<React.Fragment>
-				<PersistentDrawerRight />
+				<ScrollableTabsButtonForce />
 				<ProjectCardList />
 				<Experience />
 				<Skill />

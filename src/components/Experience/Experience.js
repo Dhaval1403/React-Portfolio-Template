@@ -36,7 +36,7 @@ function Experience() {
 	return (
 		<React.Fragment>
 			<CssBaseline />
-			<Typography variant='h5' display='block' style={{ margin: '1rem', fontSize: '2rem', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+			<Typography variant='h5' display='block' style={{ margin: '1rem', fontSize: '2rem', display: 'flex', justifyContent: 'center', alignItems: 'center' , color: 'black' }}>
 				Work Experience
 			</Typography>
 			<div className={expContainer}>
