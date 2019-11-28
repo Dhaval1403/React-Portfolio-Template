@@ -27,7 +27,7 @@ export default function ProjectCardList() {
 			<Grid
 				container
 				spacing={4}
-				style={{ flexGrow: 1 }}
+				style={{ flexGrow: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}
 				classes={{
 					'spacing-xs-4': classes['spacing-xs-4'] // overriding defaults as it was causing horizontal scroll
 				}}

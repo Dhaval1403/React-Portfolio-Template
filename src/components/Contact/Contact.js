@@ -2,6 +2,7 @@ import React from 'react';
 import { Typography } from '@material-ui/core';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
+import './Contact.css';
 
 export default function ContactForm() {
 	return (
@@ -16,9 +17,9 @@ export default function ContactForm() {
 			</Typography>
 			<div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
 				<div
+					className='contact-form'
 					style={{
 						backgroundColor: '#fff',
-						width: '50%',
 						display: 'flex',
 						flexDirection: 'column',
 						padding: '25px',
