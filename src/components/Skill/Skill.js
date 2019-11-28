@@ -23,6 +23,7 @@ export default function Skill({ skill }) {
 							style={{ width: 'auto', height: '100%' }}
 							className='svg-icon'
 							viewBox='0 0 24 24'
+							color='primary'
 						>
 							<path d={skill.svgPath} />
 						</SvgIcon>
