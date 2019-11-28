@@ -29,7 +29,6 @@ export default function ContactForm() {
 					<TextField
 						label='Name'
 						type='text'
-						autoComplete='current-password'
 						margin='normal'
 						variant='outlined'
 						placeholder='Enter your name'
@@ -37,18 +36,16 @@ export default function ContactForm() {
 					<TextField
 						label='Email'
 						type='email'
-						autoComplete='current-password'
 						margin='normal'
 						variant='outlined'
 						placeholder='Enter your email'
 					/>
 					<TextField
-						label='Password'
-						type='password'
-						autoComplete='current-password'
+						label='Message'
+						multiline
 						margin='normal'
 						variant='outlined'
-						placeholder='Enter your password'
+						placeholder='Enter your message'
 					/>
 					<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
 						<Button
