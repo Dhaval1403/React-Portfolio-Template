@@ -3,6 +3,7 @@ import PersistentDrawerRight from './components/Navigation/Navigation';
 import ProjectCardList from './components/ProjectCardList/ProjectCardList';
 import Experience from './components/Experience/Experience';
 import Skill from './components/Skill/Skill';
+import ContactForm from './components/Contact/Contact';
 import './App.css';
 
 class App extends Component {
@@ -13,6 +14,7 @@ class App extends Component {
 				<ProjectCardList />
 				<Experience />
 				<Skill />
+				<ContactForm />
 			</React.Fragment>
 		);
 	}

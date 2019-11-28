@@ -30,13 +30,14 @@ const useStyles = makeStyles({
 		}
 	}
 });
+
 function Experience() {
 	const classes = useStyles();
 	const { expContainer, overlayContent, expImg } = classes;
 	return (
 		<React.Fragment>
 			<CssBaseline />
-			<Typography variant='h5' display='block' style={{ margin: '1rem', fontSize: '2rem', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+			<Typography variant='h5' display='block' style={{ margin: '1rem', fontSize: '1.5rem', display: 'flex', justifyContent: 'center', alignItems: 'center', textTransform: 'uppercase' }}>
 				Work Experience
 			</Typography>
 			<div className={expContainer}>
