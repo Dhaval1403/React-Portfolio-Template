@@ -7,7 +7,12 @@ import skillList from '../../utils/skill-list';
 export default function Skill({ skill }) {
 	return (
 		<React.Fragment>
-			<Typography variant='h5' display='block' style={{ margin: '1rem', fontSize: '1.5rem', display: 'flex', justifyContent: 'center', alignItems: 'center', textTransform: 'uppercase' }}>
+			<Typography
+				variant='h2'
+				display='block'
+				align='center'
+				style={{ margin: '1rem', fontSize: '1.6rem', textTransform: 'uppercase' }}
+			>
 				Skills
 			</Typography>
 			<div className='skill-container'>
@@ -18,7 +23,6 @@ export default function Skill({ skill }) {
 							style={{ width: 'auto', height: '100%' }}
 							className='svg-icon'
 							viewBox='0 0 24 24'
-							color='#fff'
 						>
 							<path d={skill.svgPath} />
 						</SvgIcon>

@@ -31,17 +31,23 @@ export default function({ project, handleClose }) {
 	return (
 		<div style={modalContainerStyle}>
 			<div className='modal'>
-				<Typography gutterBottom variant='h6' component='h2' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+				<Typography
+					gutterBottom
+					variant='h6'
+					component='h2'
+					style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+				>
 					{project.title}
 				</Typography>
-				<Typography gutterBottom variant='body2' component='p' style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+				<Typography
+					gutterBottom
+					variant='body2'
+					component='p'
+					style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+				>
 					{project.des}
 				</Typography>
-				<Button
-					variant='outlined'
-					color='primary'
-					onClick={handleClose}
-				>
+				<Button variant='outlined' color='primary' onClick={handleClose}>
 					Close
 				</Button>
 			</div>

@@ -1,12 +1,12 @@
 .tabs {
+	background: #fff !important;
 	position: sticky;
 	top: 0;
 	z-index: 999;
 }
 
 @media only screen and (min-width: 600px) {
-  .tabs {
+	.tabs {
 		padding-left: 17.5%;
 	}
 }
-

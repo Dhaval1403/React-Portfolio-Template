@@ -1,28 +1,31 @@
 import React from 'react';
 import { Typography } from '@material-ui/core';
 import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
 
 export default function ContactForm() {
 	return (
 		<React.Fragment>
 			<Typography
-				variant='h5'
+				variant='h2'
 				display='block'
-				style={{
-					margin: '1rem',
-					fontSize: '1.5rem',
-					display: 'flex',
-					justifyContent: 'center',
-					alignItems: 'center',
-					textTransform: 'uppercase'
-				}}
+				align='center'
+				style={{ margin: '1rem', fontSize: '1.6rem', textTransform: 'uppercase' }}
 			>
 				Contact Me
 			</Typography>
 			<div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
-				<div style={{ backgroundColor: '#fff', width: '50%', display: 'flex', flexDirection: 'column' }}>
+				<div
+					style={{
+						backgroundColor: '#fff',
+						width: '50%',
+						display: 'flex',
+						flexDirection: 'column',
+						padding: '25px',
+						borderRadius: '10px'
+					}}
+				>
 					<TextField
-						id='outlined-password-input'
 						label='Name'
 						type='text'
 						autoComplete='current-password'
@@ -31,7 +34,6 @@ export default function ContactForm() {
 						placeholder='Enter your name'
 					/>
 					<TextField
-						id='outlined-password-input'
 						label='Email'
 						type='email'
 						autoComplete='current-password'
@@ -40,7 +42,6 @@ export default function ContactForm() {
 						placeholder='Enter your email'
 					/>
 					<TextField
-						id='outlined-password-input'
 						label='Password'
 						type='password'
 						autoComplete='current-password'
@@ -48,6 +49,16 @@ export default function ContactForm() {
 						variant='outlined'
 						placeholder='Enter your password'
 					/>
+					<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+						<Button
+							variant='outlined'
+							color='primary'
+							size='large'
+							style={{ width: '50%', marginTop: '15px' }}
+						>
+							Send
+						</Button>
+					</div>
 				</div>
 			</div>
 		</React.Fragment>
