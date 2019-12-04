@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ScrollableTabsButtonForce from "./components/Navigation/Navigation";
+import AboutMe from "./components/AboutMe/AboutMe";
 import ProjectCardList from "./components/ProjectCardList/ProjectCardList";
 import Experience from "./components/Experience/Experience";
 import Skill from "./components/Skill/Skill";
@@ -12,7 +13,9 @@ class App extends Component {
     return (
       <React.Fragment>
         <ScrollableTabsButtonForce />
-        <Section>About Me</Section>
+        <Section>
+          <AboutMe />
+        </Section>
         <Section bg>
           <ProjectCardList />
         </Section>
