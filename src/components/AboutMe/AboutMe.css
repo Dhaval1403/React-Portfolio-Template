@@ -27,7 +27,7 @@ h3 {
     grid-row: 2/3;
 }
 
-p {
+.para {
     margin-top: 5%;
 }
 
@@ -65,7 +65,7 @@ p {
         grid-row: 2/3;
     }
 
-    p {
+    .para {
         margin-top: -17%;
     }
 }
