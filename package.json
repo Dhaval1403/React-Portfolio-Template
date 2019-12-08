@@ -6,7 +6,10 @@
   "dependencies": {
     "@material-ui/core": "^4.6.1",
     "@material-ui/icons": "^4.5.1",
+    "express": "^4.17.1",
     "gh-pages": "^2.1.1",
+    "nodemailer": "^6.4.0",
+    "nodemailer-mailgun-transport": "^1.4.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-scripts": "3.2.0"
