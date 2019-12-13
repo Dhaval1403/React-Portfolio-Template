@@ -53,10 +53,25 @@ const useStyles = makeStyles((theme) => ({
 export default function ScrollableTabsButtonForce() {
 	const classes = useStyles();
 	const [ value, setValue ] = React.useState(0);
+	const [tabTypes,setTabTypes] =React.useState(['standard',true])
 
 	const handleChange = (event, newValue) => {
 		setValue(newValue);
 	};
+	
+	React.useLayoutEffect(() => {
+		function updateSize() {
+		  if(window.innerWidth>500){
+			  setTabTypes(['standard',true])
+		  }else{
+			  setTabTypes(['scrollable',false])
+		  }
+		}
+		window.addEventListener('resize', updateSize);
+		updateSize();
+		return () => window.removeEventListener('resize', updateSize);
+	  }, []);
+
 
 	return (
 		<div className={classes.root}>
@@ -64,11 +79,12 @@ export default function ScrollableTabsButtonForce() {
 				<Tabs
 					value={value}
 					onChange={handleChange}
-					variant='scrollable'
+					variant={tabTypes[0]}
 					scrollButtons='on'
 					indicatorColor='primary'
 					textColor='primary'
 					aria-label='scrollable force tabs example'
+					centered={tabTypes[1]}
 				>
 					<Tab label='About Me' icon={<PersonPinIcon />} {...a11yProps(0)} />
 					<Tab label='Project' icon={<FavoriteIcon />} {...a11yProps(1)} />
