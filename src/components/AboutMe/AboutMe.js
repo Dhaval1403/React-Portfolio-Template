@@ -16,11 +16,12 @@ const AboutMe = () => {
             </Typography>   
             <div className="name">
                 <img src={portfolio} alt="profile_photo" className="img"/>
-                <h1>John Doe</h1>  
+                <h1>Faiz Hameed</h1>  
                 <h3>Full Stack Web Developer</h3>        
             </div>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit gravida rutrum quisque non tellus.
+                Creating Beautiful things with quality and elegance! <br/>
+                Experienced in Javascript and Python. My favourite technology is ReactJS
             </p>
         </React.Fragment>
         )
