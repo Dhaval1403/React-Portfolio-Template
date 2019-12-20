@@ -1,6 +1,7 @@
 import React from 'react';
 import { SvgIcon, Typography } from '@material-ui/core';
 import './Skill.css';
+import {Element} from 'react-scroll'
 
 import skillList from '../../utils/skill-list';
 
@@ -13,7 +14,10 @@ export default function Skill({ skill }) {
 				align='center'
 				style={{ margin: '1rem', fontSize: '1.6rem', textTransform: 'uppercase' }}
 			>
+			<Element name="skill">
+
 				Skills
+			</Element>
 			</Typography>
 			<div className='skill-container'>
 				{skillList.map((skill, i) => (

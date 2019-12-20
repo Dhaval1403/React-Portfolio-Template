@@ -18,6 +18,8 @@ h1 {
     align-self: end;
     grid-column: 3/4;
     grid-row: 1/2;
+    font-family: 'Bungee', cursive;
+    font-size: 3em;
 }
 
 h3 {
@@ -25,10 +27,11 @@ h3 {
     align-self: start;
     grid-column: 3/4;
     grid-row: 2/3;
+    font-weight: 400;
 }
 
 p {
-    margin-top: 5%;
+    font-family: 'Work Sans', sans-serif;
 }
 
 @media only screen and (max-width: 600px) {

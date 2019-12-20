@@ -3,6 +3,7 @@ import { Grid, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import project_list from '../../utils/project-list';
 import ProjectCard from '../ProjectCard/ProjectCard';
+import {Element} from 'react-scroll'
 
 const useStyles = makeStyles({
 	'spacing-xs-4': {
@@ -17,12 +18,16 @@ export default function ProjectCardList() {
 	return (
 		<React.Fragment>
 			<Typography
+				id='projects'
 				variant='h2'
 				display='block'
 				align='center'
 				style={{ margin: '1rem', fontSize: '1.6rem', textTransform: 'uppercase' }}
 			>
+			<Element name="projects">
+
 				Projects
+			</Element>
 			</Typography>
 			<Grid
 				container
