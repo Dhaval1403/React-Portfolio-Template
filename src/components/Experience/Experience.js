@@ -4,7 +4,7 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import { exp } from "../../configs/Experience.js";
 import { useStyles } from "./Experience.styles";
 import ExperienceCard from "../ExperienceCard/ExperienceCard.component.jsx";
-import {Element} from 'react-scroll'
+import { Element } from "react-scroll";
 function Experience() {
   const classes = useStyles();
 
@@ -17,10 +17,7 @@ function Experience() {
         display="block"
         align="center"
       >
-      <Element name ="experience">
-
-        Work Experience
-      </Element>
+        <Element name="experience">Work Experience</Element>
       </Typography>
 
       <div className={classes.expContainer}>
