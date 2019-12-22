@@ -1,7 +1,7 @@
 import React from "react";
 import portfolio from "../../utils/portfolio.png";
 import { Typography } from "@material-ui/core";
-import "./AboutMe.css";
+import "./AboutMe.scss";
 
 const AboutMe = () => {
   return (

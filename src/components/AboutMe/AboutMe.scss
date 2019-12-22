@@ -62,14 +62,14 @@ p {
   @media only screen and (max-width: 600px) {
     .name {
       display: grid;
-      grid-template-columns: 1fr 4fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 0.25fr 1fr;
     }
 
     .img {
       justify-self: center;
       align-self: center;
-      grid-column: 2/3;
+      grid-column: 1/2;
       grid-row: 1/2;
       width: 100px;
       height: 100px;
@@ -77,23 +77,23 @@ p {
     }
 
     h1 {
-      display: grid;
       justify-self: center;
       align-self: start;
-      grid-column: 2/3;
+      grid-column: 1/2;
       grid-row: 2/3;
+      font-size: x-large;
+      text-align: center;
     }
 
-    h3 {
-      display: grid;
+    .subtitle {
       justify-self: center;
-      align-self: end;
-      grid-column: 2/3;
-      grid-row: 2/3;
-    }
-
-    p {
-      margin-top: -17%;
+      align-self: start;
+      grid-column: 1/2;
+      grid-row: 3/4;
+      h3,
+      p {
+        text-align: center;
+      }
     }
   }
 }
