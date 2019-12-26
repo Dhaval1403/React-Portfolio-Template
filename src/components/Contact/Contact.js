@@ -3,7 +3,7 @@ import { Typography } from "@material-ui/core";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import axios from "axios";
-import {Element} from 'react-scroll'
+import { Element } from "react-scroll";
 import "./Contact.css";
 
 export default function ContactForm() {
@@ -51,13 +51,11 @@ export default function ContactForm() {
         style={{
           margin: "1rem",
           fontSize: "1.6rem",
-          textTransform: "uppercase"
+          textTransform: "uppercase",
+          fontFamily: '"Bungee", cursive'
         }}
       >
-      <Element name="contact-me">
-
-        Contact Me
-      </Element>
+        <Element name="contact-me">Contact Me</Element>
       </Typography>
       <div
         style={{

@@ -9,8 +9,8 @@ export default function ExperienceCard({ title, date, desc, img }) {
       <div className={classes.overlayContent}>
         <h4>{title}</h4>
         <p>{date}</p>
-        {desc.map(point => (
-          <p>{point}</p>
+        {desc.map((point, index) => (
+          <p key={point[0] + index}>{point}</p>
         ))}
       </div>
       <div>

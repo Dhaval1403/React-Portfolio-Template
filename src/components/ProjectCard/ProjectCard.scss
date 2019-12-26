@@ -1,0 +1,46 @@
+.card-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -20px;
+}
+
+.chip-container {
+  display: flex;
+  flex-flow: row wrap;
+  height: 26px; /* pre-calculated */
+  overflow: hidden;
+}
+
+.chip {
+  margin: 2px 3px 0 1px; /* if top/bottom margins are changed, must calculate the chip-container's height again */
+}
+
+.description {
+  height: 100px;
+  overflow: hidden;
+}
+
+.project-image {
+  height: 200px;
+  width: 130px;
+}
+
+.MuiCardContent-root {
+  .MuiTypography-body2 {
+    font-family: "Work Sans", sans-serif;
+  }
+  h2 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: bold;
+  }
+  .MuiChip-colorPrimary {
+    color: #fff;
+    background-color: #3f51b5;
+    border-radius: 4px;
+  }
+}
+.one-line {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
