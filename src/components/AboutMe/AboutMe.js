@@ -24,7 +24,7 @@ const AboutMe = () => {
         <img src={portfolio} alt="profile_photo" className="img" />
         <h1>Faiz Hameed</h1>
         <div className="subtitle">
-          <h3>Full Stack Developer, Writer, Freelance Workaholic</h3>
+          <h3>I am a Full stack web developer. I give life to designs</h3>
           <p>
             Creating Beautiful things with quality and elegance! <br />
             Experienced in Javascript and Python. My favourite technology is
